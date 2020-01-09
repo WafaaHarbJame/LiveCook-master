@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:textDirection="rtl">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#13960A"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tabbarcolor"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabSelectedTextColor="@color/white"
+                android:visibility="gone"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="@color/gray" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- <androidx.viewpager.widget.ViewPager
+             android:id="@+id/view_pager"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layoutDirection="rtl"
+             android:textDirection="rtl"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+        <com.duolingo.open.rtlviewpager.RtlViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl" />
+
+</LinearLayout>
