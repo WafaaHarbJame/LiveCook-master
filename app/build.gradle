@@ -9,7 +9,6 @@ android {
         versionCode 41
         versionName "41.1"
         multiDexEnabled true
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
